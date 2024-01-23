@@ -30,9 +30,42 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-manrope">
-  <header>
+  <header >
+    <!----------------------- nab bar---------------- -->
+    <nav class="container mx-auto mt-10">
+      <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a><span class="text-[#FF4240]">Home</span></a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog </a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn-ghost lg:text-3xl font-extrabold">Hockey<span style="color: #FF4240;">&rsquo;</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-bold ">
+              <li><a><span class="text-[#FF4240]">Home</span></a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog </a></li>
+                <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end ">
+            <i class="fa-solid fa-magnifying-glass text-lg hidden lg:block"></i> &nbsp; &nbsp; &nbsp; &nbsp; 
+            <a class="btn btn-error text-white">Get Ticket</a>
+          </div>
+      </div>
+    </nav>
     <!-- -----------banner ------------- -->
-    <section class="container mx-auto my-24 w-[90%] lg:w-full">
+    <section class="container mx-auto mt-10 mb-24 w-[90%] lg:w-full">
       <div class="carousel w-full relative">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="Images/1.png" class="w-full" />
@@ -178,7 +211,7 @@
         <p class="text-center w-[90%] lg:w-[60%] mx-auto capitalize text-[des-color]"> check our new products from our shop as well as online shopping you can get discount 50% to free also so enjoy your online shopping in our website
         </p>
       </div>
-      <div class="card-grid grid grid-cols-1 lg:grid-cols-2 gap-6 p-5 lg:p-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 p-5 lg:p-0">
         <!-- 1st card -->
         <div class="flex flex-col lg:flex-row gap-5 border-2 border-solid border-[#13131819]  rounded-lg p-6  ">
           <div>
